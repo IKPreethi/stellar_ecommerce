@@ -1,0 +1,55 @@
+.cards_tile {
+    width: 210px;
+    background: #fff;
+    border-radius: 0;
+    /* box-shadow: 0px 2px 3px -1px rgba(151, 171, 187, 0.7); */
+    float: left;
+    /* transform-style: preserve-3d; */
+    margin: 10px 5px;
+    border: 1px solid #e7e7ea;
+    padding-bottom: 25px;
+    margin: 0;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px!important;
+  }
+
+  .card_body {
+   padding-top: 10px;
+  }
+
+  .title_row {
+    margin-left:  0px;
+    margin-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .title_font {
+    font-size: 14px!important;
+    color: black;
+    margin-bottom: 0;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+
+  .desc_font {
+    font-size: 14px!important;
+    color: black;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+
+  .align-item {
+        align-items: center;
+        display: flex;
+  }
+
+  .save-btn {
+    /* padding: 12px 34px !important; */
+    padding: 0 20px 0 18px !important;
+    border: none !important;
+    background-color: rgb(187, 64, 156);
+    color: white;
+    margin-left: 39px;
+    margin-bottom: -18px;
+  }

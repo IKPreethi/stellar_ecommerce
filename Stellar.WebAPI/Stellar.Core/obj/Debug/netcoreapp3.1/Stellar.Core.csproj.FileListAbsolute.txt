@@ -1,0 +1,13 @@
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.Core\bin\Debug\netcoreapp3.1\Stellar.Core.deps.json
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.Core\bin\Debug\netcoreapp3.1\Stellar.Core.dll
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.Core\bin\Debug\netcoreapp3.1\Stellar.Core.pdb
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.Core\bin\Debug\netcoreapp3.1\Stellar.DB.dll
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.Core\bin\Debug\netcoreapp3.1\Stellar.DB.pdb
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.Core\obj\Debug\netcoreapp3.1\Stellar.Core.csproj.AssemblyReference.cache
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.Core\obj\Debug\netcoreapp3.1\Stellar.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.Core\obj\Debug\netcoreapp3.1\Stellar.Core.AssemblyInfoInputs.cache
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.Core\obj\Debug\netcoreapp3.1\Stellar.Core.AssemblyInfo.cs
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.Core\obj\Debug\netcoreapp3.1\Stellar.Core.csproj.CoreCompileInputs.cache
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.Core\obj\Debug\netcoreapp3.1\Stellar.Core.csproj.CopyComplete
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.Core\obj\Debug\netcoreapp3.1\Stellar.Core.dll
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.Core\obj\Debug\netcoreapp3.1\Stellar.Core.pdb

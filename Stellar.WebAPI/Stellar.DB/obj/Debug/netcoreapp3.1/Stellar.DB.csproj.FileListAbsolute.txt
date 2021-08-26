@@ -1,0 +1,13 @@
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.DB\bin\Debug\netcoreapp3.1\Stellar.DB.deps.json
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.DB\bin\Debug\netcoreapp3.1\Stellar.DB.runtimeconfig.json
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.DB\bin\Debug\netcoreapp3.1\Stellar.DB.runtimeconfig.dev.json
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.DB\bin\Debug\netcoreapp3.1\Stellar.DB.dll
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.DB\bin\Debug\netcoreapp3.1\Stellar.DB.pdb
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.DB\obj\Debug\netcoreapp3.1\Stellar.DB.csproj.AssemblyReference.cache
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.DB\obj\Debug\netcoreapp3.1\Stellar.DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.DB\obj\Debug\netcoreapp3.1\Stellar.DB.AssemblyInfoInputs.cache
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.DB\obj\Debug\netcoreapp3.1\Stellar.DB.AssemblyInfo.cs
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.DB\obj\Debug\netcoreapp3.1\Stellar.DB.csproj.CoreCompileInputs.cache
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.DB\obj\Debug\netcoreapp3.1\Stellar.DB.dll
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.DB\obj\Debug\netcoreapp3.1\Stellar.DB.pdb
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.DB\obj\Debug\netcoreapp3.1\Stellar.DB.genruntimeconfig.cache
