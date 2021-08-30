@@ -16,7 +16,9 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "DATABASE_NAME": "SampleDB",
-        "Product_Collection_Name": "ProductCollection"
+        "Product_Collection_Name": "ProductCollection",
+        "JWT_SECRET": "The secret token",
+        "JWT_ISSUER": "Stellar"
       }
     },
     "Stellar.WebAPI": {
@@ -27,7 +29,9 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "DATABASE_NAME": "SampleDB",
-        "BOOKS_COLLECTION_NAME": "SampleCollection"
+        "BOOKS_COLLECTION_NAME": "SampleCollection",
+        "JWT_SECRET": "The secret token",
+        "JWT_ISSUER": "Stellar"
       }
     }
   }

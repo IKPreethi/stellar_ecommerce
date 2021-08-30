@@ -90,3 +90,4 @@ C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\De
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\runtimes\linux\native\libmongocrypt.so
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\runtimes\osx\native\libmongocrypt.dylib
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\native\mongocrypt.dll
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll

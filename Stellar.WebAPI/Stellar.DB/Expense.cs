@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Stellar.DB
 {
@@ -9,6 +10,10 @@ namespace Stellar.DB
         public int Id { get; set; }
         public string Description { get; set; }
         public double Amount { get; set; }
+
+        [ForeignKey("UserId")]
+        public User user { get; set; }
+
 
     }
 

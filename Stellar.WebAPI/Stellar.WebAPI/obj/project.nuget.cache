@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "MonLXXY4w4cupXXSAo7N4hoYl+Yc9Yc0SJ+pSDiHa9p5u+K+8Q8bwTcMtaemC9Ta9DILkqEM0S+55GLZ2FgOSg==",
+  "dgSpecHash": "U8T6xmODr/eM32N/kZ8J46jG+orzL9A5sO0j/DC1Xn+IdmSlzPPwK56crWCOOn73ZeDlT7sOTLkh3WZ4qzB51Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Preethi.Kathalingam\\source\\Stellar\\Stellar.WebAPI\\Stellar.WebAPI\\Stellar.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Preethi.Kathalingam\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\Preethi.Kathalingam\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Preethi.Kathalingam\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",
     "C:\\Users\\Preethi.Kathalingam\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Preethi.Kathalingam\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Preethi.Kathalingam\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
@@ -122,5 +123,16 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\Preethi.Kathalingam\\.nuget\\packages\\yamldotnet\\9.1.4\\yamldotnet.9.1.4.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Identity.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

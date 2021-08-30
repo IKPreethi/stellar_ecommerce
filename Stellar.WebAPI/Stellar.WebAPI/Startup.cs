@@ -1,3 +1,4 @@
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -38,6 +39,8 @@ namespace Stellar.WebAPI
             services.AddDbContext<AppDbContext>();
             services.AddTransient<IExpensesServices, ExpensesServices>();
             services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IPasswordHasher, PasswordHasher>();
             services.AddSwaggerDocument((settings) =>
             {
                 settings.Title = "Expenses";
