@@ -1,23 +1,25 @@
-﻿using MongoDB.Driver;
+﻿using Microsoft.AspNetCore.Http;
+using MongoDB.Driver;
 using Stellar.DB;
-using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace Stellar.Core
 {
-    public class ProductService: IProductService
+    public class ProductService : IProductService
     {
         private readonly IMongoCollection<Product> _products;
+        private readonly string _userId;
 
-        public ProductService(IDbClient dbClient)
+        public ProductService(IDbClient dbClient, IHttpContextAccessor httpContextAccessor, IUserService userService)
         {
             _products = dbClient.GetProductCollection();
+            _userId = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         }
         public async Task<List<Product>> GetProducts()
         {
-            return await _products.Find(book => true).ToListAsync();
+            return await _products.Find(product => true).ToListAsync();
         }
 
         public async Task<Product> AddProduct(Product product)
@@ -26,5 +28,6 @@ namespace Stellar.Core
             return product;
 
         }
+
     }
 }

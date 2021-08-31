@@ -27,7 +27,7 @@ namespace Stellar.Core
             return new AuthenticatedUser()
             {
                 UserName = user.UserName,
-                Token = JwtGenerator.GenerateAuthToken(user.UserName)
+                Token = JwtGenerator.GenerateAuthToken(user.UserName, dbUser.Id.ToString())
             };
 
         }
@@ -37,7 +37,7 @@ namespace Stellar.Core
             var dbUser = await _context.Users
                 .FirstOrDefaultAsync(u => u.UserName == user.UserName);
 
-            if (dbUser!= null)
+            if (dbUser != null)
             {
                 throw new UserNameAlreadyExistsException("User already exists");
             }
@@ -48,9 +48,8 @@ namespace Stellar.Core
             return new AuthenticatedUser
             {
                 UserName = user.UserName,
-                Token = JwtGenerator.GenerateAuthToken(user.UserName)
+                Token = JwtGenerator.GenerateAuthToken(user.UserName, user.Id.ToString())
             };
-    }
-
+        }
     }
 }

@@ -53,6 +53,10 @@
               "target": "Package",
               "version": "[2.2.3, )"
             },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.13.1, )"

@@ -10,5 +10,6 @@ namespace Stellar.DB
         public string Books_Collection_Name { get; set; }
         public string Mongo_Connection_String { get; set; }
         public string Product_Collection_Name { get; set; }
+        public string Buyer_Collection_Name { get; set; }
     }
 }

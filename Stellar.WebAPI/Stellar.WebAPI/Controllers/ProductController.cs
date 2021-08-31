@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Stellar.Core;
 using Stellar.DB;
 using System.Threading.Tasks;
 
 namespace Stellar.WebAPI.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class ProductController : Controller

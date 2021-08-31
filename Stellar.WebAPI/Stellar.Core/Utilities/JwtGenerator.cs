@@ -1,5 +1,6 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -8,17 +9,16 @@ namespace Stellar.Core.Utilities
 {
     public class JwtGenerator
     {
-        public static string GenerateAuthToken(string username)
+        public static string GenerateAuthToken(string username, string userId)
         {
-            var claims = new Claim[]
-            {
-                new Claim(ClaimTypes.Name, username),
-            };
+            var claims = new List<Claim>();
+            claims.Add(new Claim(ClaimTypes.Name, username));
+            claims.Add(new Claim(ClaimTypes.NameIdentifier, userId));
 
             return GenerateToken(claims, DateTime.UtcNow.AddDays(1));
         }
 
-        private static string GenerateToken(Claim[] claims, DateTime expires)
+        private static string GenerateToken(List<Claim> claims, DateTime expires)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var secret = Environment.GetEnvironmentVariable("JWT_SECRET");

@@ -17,6 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development",
         "DATABASE_NAME": "SampleDB",
         "Product_Collection_Name": "ProductCollection",
+        "Buyer_Collection_Name": "BuyerCollection",
         "JWT_SECRET": "The secret token",
         "JWT_ISSUER": "Stellar"
       }
@@ -29,7 +30,8 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "DATABASE_NAME": "SampleDB",
-        "BOOKS_COLLECTION_NAME": "SampleCollection",
+        "Product_Collection_Name": "ProductCollection",
+        "Buyer_Collection_Name": "BuyerCollection",
         "JWT_SECRET": "The secret token",
         "JWT_ISSUER": "Stellar"
       }

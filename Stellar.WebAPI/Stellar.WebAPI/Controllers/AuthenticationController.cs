@@ -29,7 +29,7 @@ namespace Stellar.WebAPI.Controllers
             }
         }
 
-        [HttpPost("signup")]
+        [HttpPost("signin")]
         public async Task<IActionResult> SignIn([FromBody] User user)
         {
             try

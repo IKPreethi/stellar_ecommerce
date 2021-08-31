@@ -69,14 +69,11 @@ C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\De
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\obj\Debug\netcoreapp3.1\Stellar.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\Namotion.Reflection.dll
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\NJsonSchema.dll
-C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\NJsonSchema.Yaml.dll
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\NSwag.Annotations.dll
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\NSwag.AspNetCore.dll
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\NSwag.Core.dll
-C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\NSwag.Core.Yaml.dll
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\NSwag.Generation.dll
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\NSwag.Generation.AspNetCore.dll
-C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\YamlDotNet.dll
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\DnsClient.dll
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
@@ -90,4 +87,9 @@ C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\De
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\runtimes\linux\native\libmongocrypt.so
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\runtimes\osx\native\libmongocrypt.dylib
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\native\mongocrypt.dll
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.DotNet.InternalAbstractions.dll
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
 C:\Users\Preethi.Kathalingam\source\Stellar\Stellar.WebAPI\Stellar.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
