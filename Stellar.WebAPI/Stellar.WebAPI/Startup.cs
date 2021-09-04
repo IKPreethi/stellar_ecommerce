@@ -28,8 +28,10 @@ namespace Stellar.WebAPI
             //EnableCors
             services.AddCors(c =>
             {
-                c.AddPolicy("AllowAllOrigins", options => options.AllowAnyOrigin());
+                c.AddPolicy("AllowAllOrigins", options => options.AllowAnyOrigin().WithMethods("PUT", "DELETE", "GET", "POST", "OPTIONS").AllowAnyHeader());
+
             });
+
             services.AddControllers();
             services.AddSingleton<IDbClient, DbClient>();
             services.AddHttpContextAccessor();

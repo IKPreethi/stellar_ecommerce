@@ -7,7 +7,7 @@ namespace Stellar.DB
     {
         [BsonId]
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
-        public string ObjectId { get; set; } 
+        public string Id { get; set; }
         public int UserId { get; set; }
         public List<CartProduct> CartProducts { get; set; }
         public List<OrderedProduct> OrderedProducts { get; set; }

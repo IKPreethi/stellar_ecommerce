@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import './NavBar.css';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 
 const NavBar = () => {
       const [click, setClick] = useState(false);  
+      const dispatch = useDispatch();
 
 
   const handleClick = () => setClick(!click);
@@ -54,6 +56,15 @@ const NavBar = () => {
         <Link to='/' >
             <Button className = "cart-button">Cart</Button>
             </Link>
+            <li className='nav-item'>
+            <Link
+              to='/'
+              className='nav-links'
+              onClick={() => { dispatch({type: "LOGOUT"});}}
+            >
+              Log Out
+            </Link>
+          </li>
           </nav>
     );
 }

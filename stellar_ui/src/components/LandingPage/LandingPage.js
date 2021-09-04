@@ -1,15 +1,137 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './LandingPage.css';
-import { ToggleButton } from 'react-bootstrap';
-import { Link, useHistory } from 'react-router-dom';
+import { Button, Nav, Form, FormControl, InputGroup, ToggleButton } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
+import axios from 'axios';
+import {useDispatch, useSelector} from 'react-redux';
 
 const LandingPage = () => {
 
-    //const [login, setLogin] = useState(false);
+    const dispatch = useDispatch();
+    const userToken = useSelector((state) => state.authenticationReducer);
+    const [user, setUser] = useState({
+        userName: "",
+        password:"",
+        email:""
+    });
+    const [signInDisplay, setSignInDisplay] = useState(false);
+    const [signUpDisplay, setSignUpDisplay] = useState(false);
+    const [ConfirmPassword, setConfirmPassword] = useState('');
     const history = useHistory();
    
+    useEffect(() => {
+        console.log(userToken);
+    }, [userToken])
+
+   const signIn = () => {
+     axios
+       .post('https://localhost:5001/Authentication/signin/' , user)
+      .then((response) => {
+           dispatch({type: "USER_AUTHENTICATED", payload:response.data});
+       });
+   };
+
+   const signUp = () => {
+    if(user.password == ConfirmPassword)
+    {
+        axios
+        .post('https://localhost:5001/Authentication/signup/' , user)
+       .then((response) => {
+            dispatch({type: "USER_AUTHENTICATED", payload:response.data});
+        });
+    }
+  };
+
+   const userUpdate = (event, field) => {
+       setUser((prev) => {
+           if(field == "userName")
+                prev.userName = event;
+           else if(field == "email")
+                prev.email = event;
+           else if(field == "password")
+                prev.password = event;
+           return prev
+             }
+       )
+   }
+
+   const renderLogin = (
+    <React.Fragment>
+    <h3 class="display-4">Welcome to Stellar</h3>
+    <p class="text-muted mb-4">One stop solution to all your shopping needs</p>
+    <div class="mb-3">
+            <Button
+                className="mb-2"
+                id="toggle-check"
+                type="checkbox"
+                variant="outline-primary"
+                value="1"
+                onClick = {() => setSignInDisplay(!signInDisplay)}
+                >
+                    Login
+            </Button>
+        </div>
+        </React.Fragment>
+   );
+
+   const renderSignUpForm = (
+    <React.Fragment>
+    <Form
+    onSubmit={event => {
+        event.preventDefault();
+        signUp();
+    }}>
+    <h4 style={{ textAlign: 'center' }}>Register Here</h4>
+    <InputGroup className='mb-3'>
+        <FormControl placeholder='Username'
+            onChange={event => userUpdate(event.target.value, "userName")} />
+    </InputGroup>
+    <InputGroup className='mb-3'>
+        <FormControl placeholder='Email'
+            onChange={event => userUpdate(event.target.value, "email")} />
+    </InputGroup>
+    <InputGroup className='mb-3'>
+        <FormControl placeholder='Password' type='password'
+            onChange={event => userUpdate(event.target.value, "password")} />
+    </InputGroup>
+    <InputGroup className='mb-3'>
+        <FormControl placeholder='ConfirmPassword' type='password'
+            onChange={event => setConfirmPassword(event.target.value)} />
+    </InputGroup>
+        <Button type='submit' variant='primary' style={{ margin: 'auto', display: 'block', width: '10rem' }}>Sign In</Button>
+    </Form>
+    </React.Fragment> 
+   );
+
+
+   const renderSignInForm = (
+       <React.Fragment>
+            <Form
+            onSubmit={event => {
+                event.preventDefault();
+                signIn();
+            }}>
+            <h4 style={{ textAlign: 'center' }}>Welcome back</h4>
+            <InputGroup className='mb-3'>
+                <FormControl placeholder='Username'
+                    onChange={event => userUpdate(event.target.value, "userName")} />
+            </InputGroup>
+            <InputGroup className='mb-3'>
+                <FormControl placeholder='Email'
+                    onChange={event => userUpdate(event.target.value, "email")} />
+            </InputGroup>
+            <InputGroup className='mb-3'>
+                <FormControl placeholder='Password' type='password'
+                    onChange={event => userUpdate(event.target.value, "password")} />
+            </InputGroup>
+            <Button type='submit' variant='primary' style={{ margin: 'auto', display: 'block', width: '10rem' }}>Sign In</Button>
+            </Form>
+            <Nav.Link onClick={() => setSignUpDisplay(!signUpDisplay)}>Don't have an account yet? Register Now!</Nav.Link>
+            </React.Fragment>
+        );
+
     return (
        <div className="maincontainer">
         <div class="container-fluid">
@@ -20,36 +142,7 @@ const LandingPage = () => {
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-10 col-xl-7 mx-auto">
-                                    <h3 class="display-4">Welcome to Stellar</h3>
-                                    <p class="text-muted mb-4">One stop solution to all your shopping needs</p>
-                                    <div class="mb-3">
-                                        <Link to="/home">
-                                            <ToggleButton
-                                                className="mb-2"
-                                                id="toggle-check"
-                                                type="checkbox"
-                                                variant="outline-primary"
-                                                value="1"
-                                                >
-                                                    Login
-                                            </ToggleButton>
-                                        </Link>
-                                        </div>
-                                    {/* <form>
-                                        <div class="mb-3">
-                                            <input id="inputEmail" type="email" placeholder="Email address" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4" />
-                                        </div>
-                                        <div class="mb-3">
-                                            <input id="inputPassword" type="password" placeholder="Password" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary" />
-                                        </div>
-                                        <div class="form-check">
-                                            <input id="customCheck1" type="checkbox" checked class="form-check-input" />
-                                            <label for="customCheck1" class="form-check-label">Remember password</label>
-                                        </div>
-                                        <div class="d-grid gap-2 mt-2">
-                                        <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
-                                        </div>
-                                    </form> */}
+                                    {!signInDisplay ? renderLogin :  (signUpDisplay ? renderSignUpForm : renderSignInForm)  }
                                 </div>
                             </div>
                         </div>

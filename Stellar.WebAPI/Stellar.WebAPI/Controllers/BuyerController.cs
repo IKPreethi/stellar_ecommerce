@@ -32,5 +32,10 @@ namespace Stellar.WebAPI.Controllers
         {
             return Ok(await _buyerService.AddBuyer(buyer));
         }
+        [HttpPut]
+        public async Task<IActionResult> EditBuyer(Buyer buyer)
+        {
+            return Ok(await _buyerService.EditBuyerCartProducts(buyer));
+        }
     }
 }

@@ -8,5 +8,6 @@ namespace Stellar.Core
     {
         Task<Buyer>GetBuyer();
         Task<Buyer> AddBuyer(Buyer buyer);
+        Task<Buyer> EditBuyerCartProducts(Buyer buyer);
     }
 }
