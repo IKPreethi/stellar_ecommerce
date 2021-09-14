@@ -6,6 +6,7 @@ import LandingPage from './components/LandingPage/LandingPage';
 import ProductDescription from './components/ProductDescription/ProductDescription';
 import ContactUs from './components/ContactUs';
 import { useDispatch, useSelector } from 'react-redux';
+import Cart from './components/Cart/Cart';
 
 function App() {
   const dispatch = useDispatch();
@@ -27,6 +28,7 @@ function App() {
           {/* <Route path="/home" component={Home} />
           <Route path="/" exact component={LandingPage} /> */}
           <Route path="/product-description/:id" component={ProductDescription} />
+          <Route path="/cart" component={Cart} />
           <Route path="/ContactUs" component={ContactUs} />
         </Switch>
       </BrowserRouter>
